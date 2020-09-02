@@ -11,6 +11,24 @@
     </header>
     <main>
         <section>
+            <input type="text" name="prename" placeholder="Vorname" required>
+            <input type="text" name="lastname" placeholder="Nachname" required>
+        </section>
+        <section>
+            <input type="text" name="street" placeholder="Strasse" required>
+            <input type="number" name="streetnumber" placeholder="Nummer (opt.)" pattern="+">
+        </section>
+        <section>
+            <input type="text" name="plz" placeholder="PLZ" pattern="\d{4}" required>
+            <input type="text" name="location" placeholder="Ort" pattern="\d" required>            
+        </section>
+        <section>
+            <input type="number" name="age" placeholder="Alter (opt.)">
+            <input type="email" name="email" placeholder="Email-Adresse" required>
+        </section>
+        <section>
+            <button type="button" name="send">Senden</button> 
+            <button type="button" name="cancel">Verwerfen</button> 
         </section>
     </main>    
 </body>
