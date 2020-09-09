@@ -1,7 +1,12 @@
-for (const key in document) {
-    document.write(key + ":" + document.key + "<br>")
+var lastNumber=0;
+var zahlen = 0;
+document.write(fibonacci());
+function fibonacci() {
+    for (let index = 1; index < 5000; index=result) {
+        result = index + lastNumber;
+        lastNumber = index;
+        zahlen = zahlen + result + ", ";
+    }
+    return zahlen;
 }
-for (let index = 10; index < 37; index++) {
-    var text = "<span style=font-size:" + index + "px>" + `Schriftgrösse= ${index} <br>`
-    document.write(text);
-}
+//0,1,1,2,3,5,8
