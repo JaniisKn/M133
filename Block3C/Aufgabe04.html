@@ -7,25 +7,28 @@
     <script src="SchraubenVerkauf.js"></script>
 </head>
 <body>
+    <form>
     <section>
         <label>Anzahl Schrauben: </label>
-        <input type="text" pattern="[0-9]"><br><br>
+        <input id="anzahlSchrauben" type="number" min="0"><br><br>
     </section>
     <section>
         <label>Anzahl Muttern: </label>
-        <input type="text" pattern="[0-9]"><br><br>
+        <input id="anzahlMuttern" type="number" min="0"><br><br>
     </section>
     <section>
         <label>Anzahl Unterlegsscheiben: </label>
-        <input type="text" pattern="[0-9]"><br><br>
+        <input id="anzahlUnterlegsscheiben" type="number" min="0"><br><br>
     </section>
     <section>
-        <button class="send">Absenden</button>
-        <button class="cancel">Formular löschen</button><br><br>
+        <button type="button" onclick="preisBerechnen()">Preis berechnen</button>
+        <button type="button" class="send" onclick="bestellen()">Absenden</button>
+        <button type="reset" class="cancel">Formular löschen</button><br><br>
     </section>
     <section>
-        <label>Preis: </label>
-        <input type="text" pattern="[0-9]" readonly><br><br>
+        <label>Preis (CHF): </label>
+        <input id="preis" type="text" pattern="[0-9]" readonly><br><br>
     </section>
+    </form>
 </body>
 </html>
