@@ -6,10 +6,15 @@ document.getElementById("txtNewTask").addEventListener("keypress", function (e) 
 });
 
 function addTask() {
-    const list = document.getElementById("lstTasks");
-    const task = document.createElement("li");
     const newTask = document.getElementById("txtNewTask");
-    task.innerText = newTask.value;
-    list.appendChild(task);
+    const checkbox = document.createElement("input");
+    checkbox.setAttribute("type", "checkbox");
+    const label = document.createElement("label");
+    var task = document.createElement("li");
+
+    label.innerText = newTask.value;
+    task.appendChild(checkbox);
+    task.appendChild(label);
+    document.getElementById("lstTasks").appendChild(task);
     newTask.value = "";
 }
